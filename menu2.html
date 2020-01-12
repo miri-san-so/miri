@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>menu</title>
+  <link rel="stylesheet" href="./css/menu2.css" />
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+
+  <div class="menu">
+    <div class="go_home">
+      <a class="go_home_link" href="./index.html">
+        <h1>GO HOME</h1>
+      </a>
+    </div>
+
+    <div id="skills" class="skills">
+      <div id="first"></div>
+      <img class="meteor" src="./img/meteor.svg" alt="" />
+      <a href="#work" class="prev_link" id="click_work">
+        <</a> <h1 class="back_text">ARTILLERY</h1>
+          <h4 class="front_text">Skills</h4>
+          <a href="#projects" class="next_link" id="click_projects">></a>
+          <img class="rocket_road" src="./img/Group 38.svg" alt="" />
+    </div>
+    <div id="projects" class="projects">
+      <a href="#first" class="prev_link" id="click_skills">
+        <</a> <img src="./img/atom.png" class="atom" alt="" />
+        <h1 class="back_text">ESPIONAGE</h1>
+        <h4 class="front_text">Projects</h4>
+        <a href="#work" class="next_link" id="click_work">></a>
+    </div>
+    <div id="work" class="work">
+      <a href="#projects" class="prev_link" id="click_projects">
+        <</a> <img class="earth" src="./img/earth.svg" alt="" />
+        <h1 class="back_text">BATTLEFIELD</h1>
+        <h4 class="front_text">Work Experience</h4>
+        <img class="rover" src="./img/rover.png" alt="" />
+        <a href="#first" class="next_link" id="click_skills">></a>
+    </div>
+  </div>
+  <div class="content">
+    <!-- SKILLS CONTENT -->
+    <div class="skills_content">
+      <h1 class="content_back_text">ARTILLERY</h1>
+      <h4 class="content_front_text">Skills</h4>
+      <div class="skill_box">
+        <div class="skill_img html_pic">
+          <img width="40px" height="40px" src="./img/html.png" alt="" />
+        </div>
+        <div class="skill_img css_pic">
+          <img width="40px" height="40px" src="./img/css.png" alt="" />
+        </div>
+        <div class="skill_img js_pic">
+          <img width="40px" height="40px" src="./img/js.png" alt="" />
+        </div>
+        <div class="skill_img scss_pic">
+          <img width="50px" height="40px" src="./img/scss.png" alt="" />
+        </div>
+        <div class="skill_img mongo_pic">
+          <img width="50px" height="40px" src="./img/mongodb.png" alt="" />
+        </div>
+        <div class="skill_img django_pic">
+          <img width="40px" height="40px" src="./img/django.png" alt="" />
+        </div>
+        <div class="skill_img python_pic">
+          <img width="40px" height="40px" src="./img/python.png" alt="" />
+        </div>
+        <div class="skill_img"></div>
+        <div class="skill_img"></div>
+      </div>
+      <div class="info">
+        <h3 class="content_help_text">Hover on the icons!!!</h3>
+        <span class="skill_info"></span>
+      </div>
+    </div>
+
+    <!-- PROJECTS CONTENT -->
+    <div class="projects_content">
+      <h1 class="projects_content_back_text">ESPIONAGE</h1>
+      <h4 class="projects_content_front_text">Projects</h4>
+      <span class="project_info_span"></span>
+
+      <div class="showcase_box">
+        <div class="showcase_content">
+          <a href="#" class="project_elon">
+            <div class="project_title ">
+              Elon Sama
+            </div>
+          </a>
+          <a href="#" class="project_daquest">
+            <div class="project_title">
+              DaQuest
+            </div>
+          </a>
+
+          <a href="#" class="project_zelig">
+            <div class="project_title ">
+              Zelig
+            </div>
+          </a>
+
+          <a href="#" class="project_ozone">
+            <div class="project_title ">
+              Ozone
+            </div>
+          </a>
+          <a href="#" class="project_pricechecker">
+            <div class="project_title ">
+              Price Checker
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- WORK CONTENT -->
+    <div class="work_content">
+      <h1 class="work_content_back_text">BATTLEFIELD</h1>
+      <h4 class="work_content_front_text">Work Experience</h4>
+      <div class="work_list">
+        <div class="work_list_item">
+          <h1>Prime infotech</h1>
+          <h4>Internship - 2 Months</h4>
+          <h5>Worked on the software the company dealt with, tested softwares to find the pros and cons of the software
+            to help the companies and the sales team</h5>
+        </div>
+
+        </ul>
+      </div>
+  </div>
+    <script src="./js/cursor.js"></script>
+    <script src="./js/skills.js"></script>
+</body>
+
+</html>

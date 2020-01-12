@@ -1,0 +1,506 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.cursor {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid #8000ff;
+  border-radius: 20px;
+  transition: 250ms ease-out;
+  animation: grow 2s infinite ease-in-out;
+}
+
+.cursor2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #6521a8;
+  border-radius: 10px;
+  transition: 200ms ease-out;
+}
+
+
+::-webkit-scrollbar {
+  border: 1px solid cyan;
+  background-color: #00010d;
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 255, 221, 1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 255, 221, 0.507);
+}
+
+body {
+  background-color: #00010d;
+}
+
+#first {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.go_home {
+  position: relative;
+  top: 5vh;
+  left: 2vw;
+  overflow: hidden;
+  border: 1px solid #0094ff;
+  width: 200px;
+  height: 60px;
+  background-image: url("../img/grid.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.go_home_link {
+  transform: translateX(-50%);
+  text-decoration: none;
+}
+
+.go_home h1 {
+  color: #9305f2;
+  font-family: "Press Start 2p";
+  text-align: center;
+  font-size: 20px;
+  line-height: 60px;
+}
+
+.menu {
+  display: flex;
+  width: 300vw;
+}
+
+.meteor {
+  position: relative;
+  left: 70vw;
+  top: 5vh;
+}
+
+.skills {
+  width: 100vw;
+  height: 100vh;
+}
+
+.skills .rocket_road {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.back_text {
+  font-family: "Press Start 2p", cursive;
+  font-size: 100px;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(42, 13, 61, 0.19);
+}
+
+.front_text {
+  font-family: "Press Start 2p", cursive;
+  color: #9305f2;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.next_link {
+  overflow: hidden;
+  text-align: center;
+  line-height: 60px;
+
+  background: linear-gradient(to right, #00010d 50%, cyan 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all 600ms ease;
+
+  width: 60px;
+  height: 60px;
+  border: 1px solid cyan;
+  font-family: "Press Start 2p";
+  font-size: 25px;
+  text-decoration: none;
+  color: cyan;
+  position: absolute;
+  top: 45%;
+  /* left: calc(100vw - 10vw); */
+  right: 3%;
+}
+
+.prev_link {
+  overflow: hidden;
+  border: 1px solid cyan;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(to right, #00010d 50%, cyan 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all 600ms ease;
+  text-align: center;
+  line-height: 60px;
+  font-family: "Press Start 2p";
+  font-size: 25px;
+  text-decoration: none;
+  color: cyan;
+  position: absolute;
+  top: 45%;
+  left: 3%;
+}
+
+.next_link:hover {
+  background-position: right bottom;
+  color: black;
+}
+
+.prev_link:hover {
+  background-position: right bottom;
+  color: black;
+}
+
+.work {
+  position: absolute;
+  margin-left: 200vw;
+  width: 100vw;
+  height: 100vh;
+}
+
+.rover {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+}
+
+.earth {
+  margin-left: 4%;
+  margin-top: 2%;
+  animation: 20s spin infinite ease-in-out;
+}
+
+.projects {
+  position: absolute;
+  margin-left: 100vw;
+  width: 100vw;
+  height: 100vh;
+}
+
+.atom {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  50% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+/* content page css */
+
+.content {
+  width: 300vw;
+  height: 100vh;
+}
+
+.skills_content {
+  width: 100vw;
+  height: 100vh;
+}
+.projects_content {
+  position: absolute;
+  top: 100vh;
+  margin-left: 100vw;
+  width: 100vw;
+  height: 100vh;
+}
+.content_back_text {
+  font-family: "Press Start 2p", cursive;
+  font-size: 100px;
+  position: absolute;
+  z-index: -1;
+  top: calc(100vh + 20%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(42, 13, 61, 0.19);
+}
+
+.content_front_text {
+  font-family: "Press Start 2p", cursive;
+  color: #9305f2;
+  font-size: 30px;
+  position: absolute;
+  top: calc(100vh + 20%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.skill_box {
+  border: 1px solid #9305f2;
+  border-radius: 5px;
+  position: absolute;
+  z-index: 2;
+  top: 140vh;
+  left: 10%;
+  background-color: #080316;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 350px;
+}
+
+.skill_img {
+  border-radius: 5px;
+  width: 25%;
+  height: 25%;
+  margin: 10px 10px 10px 10px;
+  background-color: #08051c;
+}
+
+.skill_img img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.what {
+  width: 100vw;
+  height: 100vh;
+  background-color: purple;
+}
+
+.info {
+  border-radius: 5px;
+  position: absolute;
+  /* z-index: 2; */
+  top: 140vh;
+  right: 10%;
+  width: 40%;
+  height: 350px;
+  text-align: center;
+  background-color: #00010d;
+  border: 1px solid #9305f2;
+}
+
+.content_help_text {
+  font-family: "Press Start 2p", cursive;
+  font-size: 30px;
+  color: #120f2b;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.skill_info {
+  width: 40%;
+  height: 350px;
+  font-family: "Press Start 2p", cursive;
+  padding: 10px 10px 10px 10px;
+  text-overflow: ellipsis;
+  color: #9305f2;
+  position: relative;
+  top: 5vh;
+}
+
+.skill_info h1 {
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left;
+}
+
+.skill_info h3 {
+  padding-left: 5%;
+  padding-right: 5%;
+  text-align: left;
+  color: #7105b9;
+  line-height: 30px;
+}
+
+.projects_content_back_text {
+  font-family: "Press Start 2p", cursive;
+  font-size: 100px;
+  position: absolute;
+  top: 12vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  color: rgba(42, 13, 61, 0.19);
+}
+
+.projects_content_front_text {
+  font-family: "Press Start 2p", cursive;
+  color: #9305f2;
+  font-size: 30px;
+  position: absolute;
+  top: calc(15vh + 1em);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.showcase_box {
+  overflow: hidden;
+  border-radius: 10px;
+  width: 50%;
+  height: 50%;
+  background-color: transparent;
+  border: 20px solid #0d0e1c;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.showcase_content {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+}
+
+.showcase_content a {
+  width: 45%;
+  text-decoration: none;
+  color: #9305f2;
+  margin: 10px;
+}
+
+.project_title {
+  border-radius: 5px;
+  background-color: rgb(10, 11, 24);
+  font-family: "Press Start 2p";
+  padding: 25px 10px 25px 10px;
+}
+
+.project_title:hover {
+  border: 1px solid cyan;
+}
+
+/* FOr disokaying info about project */
+.project_info_span {
+  transition: all 300ms ease-in;
+  opacity: 0;
+  border: 1px solid cyan;
+  border-radius: 10px;
+  padding: 20px;
+  position: absolute;
+  left: 67%;
+  top: 35%;
+  width: 30%;
+  height: 50%;
+  background-color: #0a0b15;
+  font-family: "Press Start 2p", cursive;
+  line-height: 30px;
+  color: #9305f2;
+}
+
+/* WORK CONTENT */
+.work_content {
+  position: absolute;
+  top: 100vh;
+  margin-left: 200vw;
+  width: 99vw;
+  height: 100vh;
+}
+
+.work_content_front_text {
+  font-family: "Press Start 2p", cursive;
+  color: #9305f2;
+  font-size: 30px;
+  position: absolute;
+  top: calc(15vh + 1em);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.work_content_back_text {
+  font-family: "Press Start 2p", cursive;
+  font-size: 100px;
+  position: absolute;
+  top: 12vh;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  color: rgba(42, 13, 61, 0.19);
+}
+
+.work_list {
+  overflow-y: auto;
+  background-color: transparent;
+  border: 1px solid cyan;
+  width: 80%;
+  height: 60%;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work_list_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  font-size: 10px;
+  font-family: "Press Start 2p", cursive;
+  color: #9305f2;
+  border: 1px solid #9305f2;
+  background-color: transparent;
+  width: 96%;
+  height: 90%;
+}
+
+.work_list_item h1 {
+  font-size: 25px;
+  padding-bottom: 20px;
+}
+
+.work_list_item h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+.work_list_item h5 {
+  color: #6f0ebe;
+  font-size: 14px;
+  line-height: 30px;
+  padding-bottom: 10px;
+}
